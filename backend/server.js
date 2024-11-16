@@ -5,7 +5,9 @@ const db = require('./db');
 const userRoutes = require('./routes/userroute');
 const carRoutes = require('./routes/carroute');
 const port = 3000;
-app.use(cors());
+app.use(cors(
+    origin: 'https://smart-garage-frontend-orpin.vercel.app'
+));
 app.use(express.json());
 app.use('/api/users', userRoutes)
 app.use('/api/cars', carRoutes)
