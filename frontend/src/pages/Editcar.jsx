@@ -2,7 +2,7 @@ import {React,useEffect} from 'react'
 import { useCar } from '../../hooks';
 import { useParams,Link,useNavigate } from 'react-router-dom';
 import axios from "axios";
-const BACKEND_URL = "http://localhost:3000"
+const BACKEND_URL = "https://smart-garage-api.vercel.app"
 
 
 
