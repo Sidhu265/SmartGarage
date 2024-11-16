@@ -4,7 +4,7 @@ import React, { useState, ChangeEvent, FormEvent } from 'react'
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://smart-garage-api.vercel.app";
 
 export default function AddCar() {
   
