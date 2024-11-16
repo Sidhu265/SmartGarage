@@ -1,7 +1,7 @@
 import { useEffect,useState } from "react";
 import axios from "axios";
 
-const BACKEND_URL = "https://smart-garage-nsva.vercel.app";
+const BACKEND_URL = "https://smart-garage-api.vercel.app/";
 
 export const useCars = () => {
     const [loading,setLoading] = useState(true);
