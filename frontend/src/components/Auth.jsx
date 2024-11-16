@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { Link,useNavigate } from "react-router-dom"
 import axios from "axios"
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://smart-garage-api.vercel.app";
 
 export const Auth = ({type}) => {
     const navigate = useNavigate();
