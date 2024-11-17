@@ -48,6 +48,7 @@ userRouter.post("/signin", async function(req, res) {
         });
     }
     const { email, password } = result.data;
+    try{
     const user = await UserModel.findOne({
         email: email
     });
@@ -61,6 +62,11 @@ userRouter.post("/signin", async function(req, res) {
         res.status(403).json({
             message: "Incorrect credentials!"
         });
+    }
+}
+    catch(error){
+        console.error("Signin error", error);
+        res.status(500).json({error: 'Internal Server Error'});
     }
 });
 
