@@ -51,7 +51,7 @@ userRouter.post("/signin", async function(req, res) {
     const user = await UserModel.findOne({
         email: email
     });
-    if (user && await bcrypt.compare(password,user.password)) { 
+    if (user && bcrypt.compare(password,user.password)) { 
         const token = jwt.sign({ userId: user._id }, JWT_SECRET);
         res.status(200).json({
             message: "User Signed in successfully!",
