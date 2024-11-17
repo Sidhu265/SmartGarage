@@ -70,7 +70,7 @@ Smart Garage is a web application that allows users to manage their vehicles eff
    npm run dev
    ```
 
-3. Open your browser and navigate to `http://localhost:5173` to access the application.
+3. Open your browser and navigate to `[https://smart-garage-frontend-seven.vercel.app]` to access the application.
 
 ## API Endpoints
 
